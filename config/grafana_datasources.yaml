@@ -1,0 +1,30 @@
+# Configuration file version
+apiVersion: 1
+
+# List of data sources to insert/update depending on what's
+# available in the database.
+datasources:
+  # <string, required> Sets the name you use to refer to
+  # the data source in panels and queries.
+  - name: PostgreSQL
+    # <string, required> Sets the data source type.
+    type: postgres
+    # <string, required> Sets the access mode, either
+    # proxy or direct (Server or Browser in the UI).
+    # Some data sources are incompatible with any setting
+    # but proxy (Server).
+    access: proxy
+    # <string> Sets the data source's URL, including the
+    # port.
+    url: db.:5432
+    # <string> Sets the database user, if necessary.
+    user: postgres
+    # <string> Sets the database name, if necessary.
+    database: dermatology_disease
+    # <map> Fields to convert to JSON and store in jsonData.
+    jsonData:
+      sslmode: "disable"
+    # <map> Fields to encrypt before storing in jsonData.
+    secureJsonData:
+      # <string> Sets the database password, if necessary.
+      password: "example"

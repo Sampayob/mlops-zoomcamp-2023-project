@@ -1,0 +1,7 @@
+__pycache__/
+.pytest_cache/
+mlruns/
+src/mlruns/
+src/mlartifacts/
+app/mlruns/
+app/mlartifacts/
