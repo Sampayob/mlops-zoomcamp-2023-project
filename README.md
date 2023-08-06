@@ -72,6 +72,6 @@ python test.py
 ```bash
  python src/evidently_metrics_calculation.py
  ```
-3. Enter [localhost:3000](localhost:3000) to enter to Grafana dashboard (user: admin, password: admin (first time))
+3. Enter [localhost:3000](https://www.localhost:3000) to enter to Grafana dashboard (user: admin, password: admin (first time))
    
 4. Enter to see the dashboards. 
